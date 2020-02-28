@@ -124,8 +124,7 @@ section{
     margin-bottom: 20px;
     border-radius: 5px;
     background-color: white;
-    flex-basis: 370px;
-    flex-grow: .4;
+    width: 40%;
     display: flex;
     padding: 30px 20px 50px 20px;
     transition: .3s;
@@ -221,9 +220,6 @@ section{
     .spin-projects{
         justify-content: space-between;
         padding: 50px 10px 70px 10px;
-    }
-    .spin-projects>div{
-        flex-basis: 340px;
     }
     .menu>ul>li{
         margin-right: 30px;
