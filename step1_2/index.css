@@ -99,9 +99,9 @@ main{
     padding-top: 80px;
 }
 .headpiece {
-    height: 70%;
+    height: 400px;
     position: absolute;
-    right: -13%;
+    right: -170px;
     top: 0;
     z-index: -1;
     max-width: 85%;
