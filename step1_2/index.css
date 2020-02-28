@@ -125,6 +125,7 @@ section{
     border-radius: 5px;
     background-color: white;
     flex-basis: 370px;
+    flex-grow: .4;
     display: flex;
     padding: 30px 20px 50px 20px;
     transition: .3s;
@@ -206,9 +207,10 @@ section{
     outline: none;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1260px) {
     .spin-projects{
-        padding: 50px 20px 70px 100px;
+        padding: 50px 0 70px 10px;
+        justify-content: space-around;
     }
 }
 
@@ -217,7 +219,7 @@ section{
         max-width: 90%;
     }
     .spin-projects{
-        justify-content: space-evenly;
+        justify-content: space-between;
         padding: 50px 10px 70px 10px;
     }
     .spin-projects>div{
