@@ -286,11 +286,15 @@ section{
         box-shadow: none;
         background: none;
     }
+    .flipped .nav-arrow{
+        transform: rotate(225deg);
+    }
 
     .menu>ul>li>ul.active{
         display: block;
     }
     .menu>ul>li>ul a{
+        font-size: 20px;
         color: #597685;
     }
     .nav-arrow{
