@@ -1,5 +1,6 @@
 
 body {
+    box-sizing: border-box;
     overflow-x: hidden;
     margin: 0;
     font-size: 100%;
@@ -33,20 +34,36 @@ ul{
 }
 
 header{
-    position: relative;
+    position: fixed;
+    width: 100%;
     z-index: 10;
     border-bottom: 1px solid #eeeeee;
-    background: #fff;
+}
+header:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.logo{
+    position: relative;
+    z-index: 3;
 }
 .logo img{
     height: 48px;
     max-width: 250px
 }
-nav{
+.header__body{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
+}
+nav{
+
 }
 .menu__burger{
     display: none;
@@ -76,8 +93,8 @@ nav{
     right: -10px;
 }
 .menu>ul>li:hover>ul{
-    display: block;
-}
+     display: block;
+ }
 .menu>ul>li>ul li {
     margin-bottom: 10px;
 }
@@ -190,7 +207,7 @@ section{
 .sending-data button{
     outline: none;
     border: none;
-    padding: 5px 10%;
+    padding: 5px 20px;
     background: black;
     color: white;
     font-size: 16px;
@@ -226,14 +243,68 @@ section{
     }
 }
 @media (max-width: 885px) {
-    .menu>ul{
+    body.lock{
+        overflow: hidden;
+    }
+    header:before {
+        z-index: 2;
+    }
+    .menu{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1c1c1c;
+        transition: all .3s ease-in;
+        overflow: auto;
+    }
+    .menu.active{
+        top: 0;
+    }
+    .menu>ul>li:hover>ul{
         display: none;
+    }
+    .menu>ul {
+        padding: 90px 0 20px 80px;
+        flex-direction: column;
+    }
+    .menu>ul span{
+        font-size: 25px;
+        color: white;
+    }
+    .menu>ul>li {
+        margin-bottom: 15px;
+        position: static;
+        height: max-content;
+    }
+
+    .menu>ul>li>ul{
+        position: static;
+        display: none;
+        padding: 15px 0 0 0;
+        box-shadow: none;
+        background: none;
+    }
+
+    .menu>ul>li>ul.active{
+        display: block;
+    }
+    .menu>ul>li>ul a{
+        color: #597685;
+    }
+    .nav-arrow{
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        margin-left: 4px;
+        margin-bottom: 2px;
     }
     .menu__burger{
         display: block;
         position: relative;
         height: 20px;
         width: 30px;
+        z-index: 3;
     }
     .menu__burger:before,
     .menu__burger:after{
@@ -243,12 +314,24 @@ section{
         width: 100%;
         height: 2px;
         left: 0;
+        transition: all .3s ease-in;
     }
     .menu__burger:before{
         top: 0;
     }
     .menu__burger:after{
         bottom: 0;
+    }
+    .menu__burger.active:before{
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .menu__burger.active:after{
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .menu__burger.active  span{
+         transform: scale(0);
     }
     .menu__burger span {
         position: absolute;
@@ -257,6 +340,7 @@ section{
         height: 2px;
         left: 0;
         top: 9px;
+        transition: all .3s ease-in;
     }
     .spin-projects>div {
         flex-basis: 100%;
@@ -269,6 +353,9 @@ section{
         font-size: 22px;
         line-height: 35px;
         margin: 20px 10px 80px 0;
+    }
+    .logo img {
+        height: 38px;
     }
 }
 
@@ -305,5 +392,8 @@ section{
     }
     .sending-data button{
         padding: 5px 25px;
+    }
+    .main-content {
+        padding: 10px;
     }
 }

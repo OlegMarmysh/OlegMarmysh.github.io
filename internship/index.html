@@ -11,19 +11,19 @@
 <body>
 <header>
     <div class="wrapper-block">
-        <nav>
+        <div class="header__body">
             <div class="logo">
                 <a href="#">
                     <img src="./image/logo.svg" alt="a11y">
                 </a>
             </div>
-            <div class="menu">
-                <div class="menu__burger">
-                    <span></span>
-                </div>
+            <div class="menu__burger">
+                <span></span>
+            </div>
+            <nav class="menu">
                 <ul>
                     <li>
-                        <span>Why Spring</span>
+                        <span class="menu__title">Why Spring</span>
                         <div class="nav-arrow"></div>
                         <ul>
                             <li><a href="#">Overview</a></li>
@@ -34,7 +34,7 @@
                         </ul>
                     </li>
                     <li>
-                        <span>Learn</span>
+                        <span class="menu__title">Learn</span>
                         <div class="nav-arrow"></div>
                         <ul>
                             <li><a href="#">Overview</a></li>
@@ -44,7 +44,7 @@
                         </ul>
                     </li>
                     <li>
-                        <span>Projects</span>
+                        <span class="menu__title">Projects</span>
                         <div class="nav-arrow"></div>
                         <ul>
                             <li><a href="#">Overview</a></li>
@@ -61,7 +61,7 @@
                         <a href="#"><span>Support</span></a>
                     </li>
                     <li>
-                        <span>Community</span>
+                        <span class="menu__title">Community</span>
                         <div class="nav-arrow"></div>
                         <ul>
                             <li><a href="#">Overview</a></li>
@@ -71,13 +71,13 @@
                         </ul>
                     </li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </div>
 </header>
 <main>
     <div class="wrapper-block">
-            <img class="headpiece" src="./image/pacman.svg" alt="a11y">
+        <img class="headpiece" src="./image/pacman.svg" alt="a11y">
         <div class="main-content">
             <h1>Projects</h1>
             <p>From configuration to security, web apps to big data—whatever the infrastructure needs of your
@@ -236,5 +236,6 @@
         </div>
     </div>
 </footer>
+<script src="index.js"></script>
 </body>
 </html>
