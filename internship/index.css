@@ -79,6 +79,9 @@ nav{
     height: 50px;
     transform: translateY(15px);
 }
+.menu>ul div {
+    display: inline-block;
+}
 .menu>ul>li>ul{
     position: absolute;
     top: 46px;
@@ -277,6 +280,7 @@ section{
         margin-bottom: 15px;
         position: static;
         height: max-content;
+        width: max-content;
     }
 
     .menu>ul>li>ul{

@@ -21,13 +21,13 @@
                 <span></span>
             </div>
             <nav class="menu">
-                <ul>
-                    <li class="menu__first">
-                        <div>
+                <ul class="menu__container">
+                    <li class="menu__item">
+                        <div class="menu__title">
                             <span>Why Spring</span>
                             <div class="nav-arrow"></div>
                         </div>
-                        <ul>
+                        <ul class="submenu-item">
                             <li><a href="#">Overview</a></li>
                             <li><a href="#">Microservices</a></li>
                             <li><a href="#">Reactive</a></li>
@@ -35,24 +35,24 @@
                             <li><a href="#">Cloud</a></li>
                         </ul>
                     </li>
-                    <li class="menu__second">
-                        <div>
+                    <li class="menu__item">
+                        <div class="menu__title">
                             <span>Learn</span>
                             <div class="nav-arrow"></div>
                         </div>
-                        <ul>
+                        <ul class="submenu-item">
                             <li><a href="#">Overview</a></li>
                             <li><a href="#">Quickstart</a></li>
                             <li><a href="#">Guides</a></li>
                             <li><a href="#">Blog</a></li>
                         </ul>
                     </li>
-                    <li class="menu__third">
-                        <div>
+                    <li class="menu__item">
+                        <div class="menu__title">
                             <span>Projects</span>
                             <div class="nav-arrow"></div>
                         </div>
-                        <ul>
+                        <ul class="submenu-item">
                             <li><a href="#">Overview</a></li>
                             <li><a href="#">Spring Boot</a></li>
                             <li><a href="#">Spring Framework</a></li>
@@ -60,18 +60,18 @@
                             <li><a href="#">Spring Data</a></li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="menu__item">
                         <a href="#"><span>Training</span></a>
                     </li>
-                    <li>
+                    <li class="menu__item">
                         <a href="#"><span>Support</span></a>
                     </li>
-                    <li class="menu__forth">
-                        <div>
+                    <li class="menu__item">
+                        <div class="menu__title">
                             <span>Community</span>
                             <div class="nav-arrow"></div>
                         </div>
-                        <ul>
+                        <ul class="submenu-item">
                             <li><a href="#">Overview</a></li>
                             <li><a href="#">Events</a></li>
                             <li><a href="#">Team</a></li>
@@ -97,46 +97,6 @@
 <section>
     <div class="wrapper-block">
         <div class="spin-projects">
-            <div>
-                <div>
-                    <img src="./image/spring-boot.svg" alt="a11y">
-                </div>
-                <div>
-                    <h3>Spring boot</h3>
-                    <p>Takes an opinionated view of building Spring applications and gets you up and running as
-                        quickly as possible.</p>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="./image/spring-framework.svg" alt="a11y">
-                </div>
-                <div>
-                    <h3>Spring framework</h3>
-                    <p>Provides core support for dependency injection, transaction management, web apps, data
-                        access, messaging and more.</p>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="./image/spring-data.svg" alt="a11y">
-                </div>
-                <div>
-                    <h3>Spring data</h3>
-                    <p>Provides a consistent approach to data access – relational, non-relational, map-reduce, and
-                        beyond.</p>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="./image/spring-cloud.svg" alt="a11y">
-                </div>
-                <div>
-                    <h3>Spring cloud</h3>
-                    <p>Provides a set of tools for common patterns in distributed systems. Useful for building and
-                        deploying microservices.</p>
-                </div>
-            </div>
         </div>
     </div>
 </section>
@@ -145,44 +105,6 @@
         <div class="spin-attic-projects">
             <h3>Projects in the Attic</h3>
             <div class="spin-projects">
-                <div>
-                    <div>
-                        <img src="./image/logo-io-platform.png" alt="a11y">
-                    </div>
-                    <div>
-                        <h3>Spring IO Platform</h3>
-                        <p>Provides a cohesive, versioned platform for building modern applications. It is a modular,
-                            enterprise-grade distribution that delivers a curated set of dependencies.</p>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="./image/spring-ed.svg" alt="a11y">
-                    </div>
-                    <div>
-                        <h3>Spring Flex</h3>
-                        <p>A project to make it easier to build Spring-powered Rich Internet Applications using Adobe
-                            Flex as the front-end client.</p>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="./image/spring-ed.svg" alt="a11y">
-                    </div>
-                    <div>
-                        <h3>Spring integration Groovy DSL</h3>
-                        <p>A Groovy based DSL for developing Spring Integration applications.</p>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="./image/spring-ed.svg" alt="a11y">
-                    </div>
-                    <div>
-                        <h3>Spring integration Scala DSL</h3>
-                        <p>A Scala based DSL for developing Spring Integration applications.</p>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -245,5 +167,6 @@
     </div>
 </footer>
 <script src="burgerMenu.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
