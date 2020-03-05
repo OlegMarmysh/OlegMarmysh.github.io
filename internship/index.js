@@ -54,6 +54,8 @@ spinProjects.map(el => spinProjectEl.insertAdjacentHTML("afterbegin", `  <div>
                     <p>${el.body}</p>
                 </div>
             </div>`));
+
+
 const spinAtticProjectEl = document.querySelector(".spin-attic-projects>div");
 spinAtticProjects.map(el => spinAtticProjectEl.insertAdjacentHTML("afterbegin", `  <div>
                 <div>
@@ -72,9 +74,10 @@ const searchButton = document.querySelector(".search-block button");
 
 const findElement = (e) => {
     e.preventDefault();
-    const elem = spinProjects.filter(el => el.title === input.value);
-    if (elem.length) {
-        elem.map((el => spinProjectEl.innerHTML = `<div>
+    const spinProjectBlock = spinProjects.filter(el => el.title === input.value);
+    const spinAtticProjectBlock = spinAtticProjects.filter(el => el.title === input.value);
+    if (spinProjectBlock.length) {
+        spinProjectBlock.map((el => spinProjectEl.innerHTML = `<div>
                 <div>
                     <img src=${el.img} alt="a11y">
                 </div>
@@ -83,8 +86,20 @@ const findElement = (e) => {
                     <p>${el.body}</p>
                 </div>
             </div>`));
+        spinAtticProjectEl.innerHTML = 'No results'
+    } else if (spinAtticProjectBlock.length) {
+        spinAtticProjectBlock.map((el => spinAtticProjectEl.innerHTML = `<div>
+                <div>
+                    <img src=${el.img} alt="a11y">
+                </div>
+                <div>
+                    <h3>${el.title}</h3>
+                    <p>${el.body}</p>
+                </div>
+            </div>`));
+        spinProjectEl.innerHTML = 'No results'
     } else {
-        spinProjectEl.innerHTML = "No results"
+        document.querySelectorAll('.spin-projects').forEach(el => el.innerHTML = "No results")
     }
 };
 

@@ -322,7 +322,7 @@ section{
 
     .menu>ul>li>ul{
         position: static;
-        display: block;
+        display: none;
         padding: 15px 0 0 0;
         box-shadow: none;
         background: none;
