@@ -25,7 +25,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/examples/testint2/olegmarmysh.github.io" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../todoLists/todolist_redux" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -55,6 +55,7 @@
       <workItem from="1582896463448" duration="33330000" />
       <workItem from="1583254592099" duration="695000" />
       <workItem from="1583255592468" duration="12784000" />
+      <workItem from="1583433508100" duration="11986000" />
     </task>
     <servers />
   </component>
