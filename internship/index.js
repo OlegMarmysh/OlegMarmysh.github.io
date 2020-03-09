@@ -44,8 +44,9 @@ const spinAtticProjects = [
 ];
 
 
-const spinProjectEl = document.querySelector(".spin-projects");
-spinProjects.map(el => spinProjectEl.insertAdjacentHTML("afterbegin", `  <div>
+const createElement = (elem, arrayElem) => {
+    return elem.innerHTML = arrayElem.map(el => {
+        return `  <div>
                 <div>
                     <img src=${el.img} alt="project_logo">
                 </div>
@@ -53,19 +54,17 @@ spinProjects.map(el => spinProjectEl.insertAdjacentHTML("afterbegin", `  <div>
                     <h3>${el.title}</h3>
                     <p>${el.body}</p>
                 </div>
-            </div>`));
+            </div>`
+    }).join("");
+};
+
+
+const spinProjectEl = document.querySelector(".spin-projects");
+createElement(spinProjectEl, spinProjects);
 
 
 const spinAtticProjectEl = document.querySelector(".spin-attic-projects>div");
-spinAtticProjects.map(el => spinAtticProjectEl.insertAdjacentHTML("afterbegin", `  <div>
-                <div>
-                    <img src=${el.img} alt="attic_project_logo">
-                </div>
-                <div>
-                    <h3>${el.title}</h3>
-                    <p>${el.body}</p>
-                </div>
-            </div>`));
+createElement(spinAtticProjectEl, spinAtticProjects);
 
 
 const input = document.querySelector(".place_for_search");
@@ -74,33 +73,23 @@ const searchButton = document.querySelector(".search-block button");
 
 const findElement = (e) => {
     e.preventDefault();
-    const spinProjectBlock = spinProjects.filter(el => el.title === input.value);
-    const spinAtticProjectBlock = spinAtticProjects.filter(el => el.title === input.value);
-    if (spinProjectBlock.length) {
-        spinProjectBlock.map((el => spinProjectEl.innerHTML = `<div>
-                <div>
-                    <img src=${el.img} alt="a11y">
-                </div>
-                <div>
-                    <h3>${el.title}</h3>
-                    <p>${el.body}</p>
-                </div>
-            </div>`));
-        spinAtticProjectEl.innerHTML = 'No results'
-    } else if (spinAtticProjectBlock.length) {
-        spinAtticProjectBlock.map((el => spinAtticProjectEl.innerHTML = `<div>
-                <div>
-                    <img src=${el.img} alt="a11y">
-                </div>
-                <div>
-                    <h3>${el.title}</h3>
-                    <p>${el.body}</p>
-                </div>
-            </div>`));
-        spinProjectEl.innerHTML = 'No results'
+    let search = new RegExp(input.value, "i");
+    const spinProjectBlock = spinProjects.filter(el => search.test(el.title));
+    const spinAtticProjectBlock = spinAtticProjects.filter(el => search.test(el.title));
+    if (spinProjectBlock.length && spinAtticProjectBlock.length) {
+        createElement(spinProjectEl, spinProjectBlock);
+        createElement(spinAtticProjectEl, spinAtticProjectBlock);
     } else {
-        document.querySelectorAll('.spin-projects').forEach(el => el.innerHTML = "No results")
-    }
+        if (!spinProjectBlock.length && spinAtticProjectBlock.length) {
+            createElement(spinAtticProjectEl, spinAtticProjectBlock);
+            spinProjectEl.innerHTML = "No results"
+        } else if(spinProjectBlock.length && !spinAtticProjectBlock.length){
+            createElement(spinProjectEl, spinProjectBlock);
+            spinAtticProjectEl.innerHTML = "No results"
+        }else {
+            document.querySelectorAll('.spin-projects').forEach(el => el.innerHTML = "No results")
+        }
+        }
 };
 
 

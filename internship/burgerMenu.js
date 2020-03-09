@@ -3,13 +3,13 @@ const navMenu = document.querySelector(".menu");
 const navMenuItems = navMenu.querySelectorAll(".menu__container > .menu__item");
 
 
-const createBurgerMenu = function () {
+const createBurgerMenu = () => {
     burgerMenu.classList.toggle("active");
     navMenu.classList.toggle("active");
     document.body.classList.toggle("lock");
 };
 
-handleToggleSubmenu = item => {
+const handleToggleSubmenu = item => {
     item.querySelector(".submenu-item").classList.toggle("active");
     navMenuItems.forEach(menuItem => {
         if (menuItem !== item) {
