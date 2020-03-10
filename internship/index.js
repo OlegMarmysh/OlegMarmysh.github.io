@@ -1,4 +1,4 @@
-const spinProjects = [
+const springProjects = [
     {
         img: "./image/spring-boot.svg",
         title: "Spring boot",
@@ -20,7 +20,7 @@ const spinProjects = [
         body: "Provides a set of tools for common patterns in distributed systems. Useful for building and deploying microservices."
     }
 ];
-const spinAtticProjects = [
+const springAtticProjects = [
     {
         img: "./image/logo-io-platform.png",
         title: "Spring IO Platform",
@@ -44,9 +44,7 @@ const spinAtticProjects = [
 ];
 
 
-const createElement = (elem, arrayElem) => {
-    return elem.innerHTML = arrayElem.map(el => {
-        return `  <div>
+const createElement = (elem, arrayElem) => elem.innerHTML = arrayElem.map(el => `  <div>
                 <div>
                     <img src=${el.img} alt="project_logo">
                 </div>
@@ -55,16 +53,15 @@ const createElement = (elem, arrayElem) => {
                     <p>${el.body}</p>
                 </div>
             </div>`
-    }).join("");
-};
+).join("");
 
 
-const spinProjectEl = document.querySelector(".spin-projects");
-createElement(spinProjectEl, spinProjects);
+const springProjectEl = document.querySelector(".spring-projects");
+createElement(springProjectEl, springProjects);
 
 
-const spinAtticProjectEl = document.querySelector(".spin-attic-projects>div");
-createElement(spinAtticProjectEl, spinAtticProjects);
+const springAtticProjectEl = document.querySelector(".spring-attic-projects>div");
+createElement(springAtticProjectEl, springAtticProjects);
 
 
 const input = document.querySelector(".place_for_search");
@@ -74,22 +71,22 @@ const searchButton = document.querySelector(".search-block button");
 const findElement = (e) => {
     e.preventDefault();
     let search = new RegExp(input.value, "i");
-    const spinProjectBlock = spinProjects.filter(el => search.test(el.title));
-    const spinAtticProjectBlock = spinAtticProjects.filter(el => search.test(el.title));
-    if (spinProjectBlock.length && spinAtticProjectBlock.length) {
-        createElement(spinProjectEl, spinProjectBlock);
-        createElement(spinAtticProjectEl, spinAtticProjectBlock);
+    const springProjectBlock = springProjects.filter(el => search.test(el.title));
+    const springAtticProjectBlock = springAtticProjects.filter(el => search.test(el.title));
+    if (springProjectBlock.length && springAtticProjectBlock.length) {
+        createElement(springProjectEl, springProjectBlock);
+        createElement(springAtticProjectEl, springAtticProjectBlock);
     } else {
-        if (!spinProjectBlock.length && spinAtticProjectBlock.length) {
-            createElement(spinAtticProjectEl, spinAtticProjectBlock);
-            spinProjectEl.innerHTML = "No results"
-        } else if(spinProjectBlock.length && !spinAtticProjectBlock.length){
-            createElement(spinProjectEl, spinProjectBlock);
-            spinAtticProjectEl.innerHTML = "No results"
-        }else {
-            document.querySelectorAll('.spin-projects').forEach(el => el.innerHTML = "No results")
-        }
-        }
+        document.querySelectorAll('.spring-projects').forEach(el => el.innerHTML = "No results")
+    }
+    if (!springProjectBlock.length && springAtticProjectBlock.length) {
+        createElement(springAtticProjectEl, springAtticProjectBlock);
+        springProjectEl.innerHTML = "No results"
+    }
+    if (springProjectBlock.length && !springAtticProjectBlock.length) {
+        createElement(springProjectEl, springProjectBlock);
+        springAtticProjectEl.innerHTML = "No results"
+    }
 };
 
 
