@@ -67,6 +67,15 @@ createElement(springAtticProjectEl, springAtticProjects);
 const input = document.querySelector(".place_for_search");
 const searchButton = document.querySelector(".search-block button");
 
+const debounce = (func, delay) => {
+    let inDebounce;
+    return function () {
+        const context = this;
+        const args = arguments;
+        clearTimeout(inDebounce);
+        inDebounce = setTimeout(() => func.apply(context, args), delay)
+    }
+};
 
 const findElement = (e) => {
     e.preventDefault();
@@ -89,5 +98,5 @@ const findElement = (e) => {
     }
 };
 
-
+input.addEventListener("keyup", debounce(findElement, 500));
 searchButton.addEventListener("click", findElement);
