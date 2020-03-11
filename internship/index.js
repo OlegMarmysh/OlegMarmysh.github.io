@@ -82,21 +82,14 @@ const findElement = (e) => {
     let search = new RegExp(input.value, "i");
     const springProjectBlock = springProjects.filter(el => search.test(el.title));
     const springAtticProjectBlock = springAtticProjects.filter(el => search.test(el.title));
-    if (springProjectBlock.length && springAtticProjectBlock.length) {
-        createElement(springProjectEl, springProjectBlock);
-        createElement(springAtticProjectEl, springAtticProjectBlock);
-    } else {
-        document.querySelectorAll('.spring-projects').forEach(el => el.innerHTML = "No results")
-    }
-    if (!springProjectBlock.length && springAtticProjectBlock.length) {
-        createElement(springAtticProjectEl, springAtticProjectBlock);
+    !!springAtticProjectBlock.length ?
+        createElement(springAtticProjectEl, springAtticProjectBlock) :
+        springAtticProjectEl.innerHTML = "No results";
+    !!springProjectBlock.length ?
+        createElement(springProjectEl, springProjectBlock) :
         springProjectEl.innerHTML = "No results"
-    }
-    if (springProjectBlock.length && !springAtticProjectBlock.length) {
-        createElement(springProjectEl, springProjectBlock);
-        springAtticProjectEl.innerHTML = "No results"
-    }
 };
+
 
 input.addEventListener("keyup", debounce(findElement, 500));
 searchButton.addEventListener("click", findElement);
