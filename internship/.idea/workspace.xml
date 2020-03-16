@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="77868199-5d17-4303-8183-c26ba6666a53" name="Default Changelist" comment="" />
+    <list default="true" id="77868199-5d17-4303-8183-c26ba6666a53" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/olegmarmysh.github.io.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring/.idea/spring.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring/src/App.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring/src/Footer/Footer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring/src/Footer/Footer.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring/src/Footer/FooterLeft/FooterLeft.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring/src/Footer/FooterLeft/FooterLeft.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring/src/Footer/FooterRight/FooterRight.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring/src/Footer/FooterRight/FooterRight.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring/src/Header/Header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring/src/Header/Header.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring/src/Header/Menu/Menu.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring/src/Header/Menu/Menu.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring/src/Main/Main.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring/src/Main/Main.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring/src/MainMixiins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring/src/Projects/Projects.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring/src/Projects/Projects.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring/src/Projects/SpringAtticProject/SpringAtticProject.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring/src/Projects/SpringProject/SpringProject.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring/src/Projects/SpringProject/SpringProjects.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +51,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../todoLists/todolist_redux" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../todoLists/todolist_classes" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
   </component>
@@ -60,7 +86,9 @@
       <workItem from="1583433508100" duration="11986000" />
       <workItem from="1583447407031" duration="1524000" />
       <workItem from="1583777211015" duration="13846000" />
-      <workItem from="1583866375033" duration="9402000" />
+      <workItem from="1583866375033" duration="10400000" />
+      <workItem from="1584036479588" duration="5490000" />
+      <workItem from="1584200098830" duration="17351000" />
     </task>
     <servers />
   </component>

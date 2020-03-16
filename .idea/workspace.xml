@@ -2,24 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77868199-5d17-4303-8183-c26ba6666a53" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/olegmarmysh.github.io.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/Footer/Footer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/Footer/Footer.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/Footer/FooterLeft/FooterLeft.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/Footer/FooterLeft/FooterLeft.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/Footer/FooterRight/FooterRight.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/Footer/FooterRight/FooterRight.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/Header/Header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/Header/Header.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/Header/Menu/Menu.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/Header/Menu/Menu.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/Main/Main.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/Main/Main.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/Projects/Projects.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/Projects/Projects.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/Projects/SpringAtticProject/SpringAtticProject.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/Projects/SpringAtticProject/SpringAtticProject.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/Projects/SpringProject/SpringProject.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/Projects/SpringProject/SpringProjects.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/logo-io-platform.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/pacman.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/spring-boot.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/spring-cloud.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/spring-data.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/spring-ed.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/spring-framework.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/step1_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/step1_2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step1_2/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/step1_2/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step1_2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/step1_2/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internship/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/internship/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,11 +44,25 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1YJ8U8AW2gIn8EyHdSFifOaUKPZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../testing" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring/src/Footer/FooterRight" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\work\internship\olegmarmysh.github.io\spring\src\Footer" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\work\internship\olegmarmysh.github.io\spring\src\Footer\FooterRight" />
+      <recent name="C:\work\internship\olegmarmysh.github.io\spring\src\Footer\FooterLeft" />
+      <recent name="C:\work\internship\olegmarmysh.github.io\spring\src\Projects\SpringAtticProjects" />
+      <recent name="C:\work\internship\olegmarmysh.github.io\spring\src\Projects\SpringProjects" />
+      <recent name="C:\work\internship\olegmarmysh.github.io\spring\src\Header\Menu" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -69,6 +89,7 @@
       <workItem from="1582649352468" duration="8228000" />
       <workItem from="1582715998990" duration="23459000" />
       <workItem from="1582805024688" duration="10495000" />
+      <workItem from="1584036510834" duration="5976000" />
     </task>
     <servers />
   </component>
@@ -80,7 +101,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
