@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/spring/static/css/main.3d40a01d.chunk.css",
+    "main.js": "/spring/static/js/main.4ea485ea.chunk.js",
+    "main.js.map": "/spring/static/js/main.4ea485ea.chunk.js.map",
+    "runtime-main.js": "/spring/static/js/runtime-main.100be23e.js",
+    "runtime-main.js.map": "/spring/static/js/runtime-main.100be23e.js.map",
+    "static/js/2.b592baa2.chunk.js": "/spring/static/js/2.b592baa2.chunk.js",
+    "static/js/2.b592baa2.chunk.js.map": "/spring/static/js/2.b592baa2.chunk.js.map",
+    "index.html": "/spring/index.html",
+    "precache-manifest.19c046081f5b508699ef76e992ad8b6b.js": "/spring/precache-manifest.19c046081f5b508699ef76e992ad8b6b.js",
+    "service-worker.js": "/spring/service-worker.js",
+    "static/css/main.3d40a01d.chunk.css.map": "/spring/static/css/main.3d40a01d.chunk.css.map",
+    "static/js/2.b592baa2.chunk.js.LICENSE.txt": "/spring/static/js/2.b592baa2.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/spring/static/media/logo.fc4350c5.svg",
+    "static/media/pacman.svg": "/spring/static/media/pacman.c8a21978.svg",
+    "static/media/spring-boot.svg": "/spring/static/media/spring-boot.7f2e24fb.svg",
+    "static/media/spring-cloud.svg": "/spring/static/media/spring-cloud.81fe04ab.svg",
+    "static/media/spring-data.svg": "/spring/static/media/spring-data.79cc203e.svg",
+    "static/media/spring-ed.svg": "/spring/static/media/spring-ed.edf462fe.svg",
+    "static/media/spring-framework.svg": "/spring/static/media/spring-framework.640ad1b0.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.100be23e.js",
+    "static/js/2.b592baa2.chunk.js",
+    "static/css/main.3d40a01d.chunk.css",
+    "static/js/main.4ea485ea.chunk.js"
+  ]
+}
